@@ -1,0 +1,39 @@
+<%- include('header') %>
+    <div id="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                  <!-- post-container -->
+                    <div class="post-container">
+                        <% posts.forEach(post => { %>                          
+                            <div class="post-content single-post">
+                                <h3><%= post.title %></h3>
+                                <div class="post-information">
+                                    <p class="description"><%= post.description %></p>
+                                    
+                                    <span>
+                                        <i class="" aria-hidden="true"></i>
+                                        <%= post.ingredients %>
+                                    </span>
+
+                                    <span>
+                                        <i class="fa fa-tags" aria-hidden="true"></i>
+                                        <%= post.category.name %>
+                                    </span>
+
+                                    <span>
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        <%= post.formattedDate %>
+                                    </span>
+                                </div>
+                                <img class="single-feature-image" src="/uploads/<%= post.image %>" alt=""/>
+                            </div>
+                        <% }) %>
+
+                    </div>
+                    <!-- /post-container -->
+                </div>
+            </div>
+        </div>
+    </div>
+<%- include('footer') %>

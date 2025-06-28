@@ -1,0 +1,193 @@
+:root {
+  --bs-font-sans-serif: 'Rubik', sans-serif;
+}
+
+.container-xxl { max-width: 1530px; }
+
+body {
+  background-image: url("/img/i-like-food.svg");
+  background-color: rgb(243,243,243);
+}
+
+a { color: var(--bs-dark); }
+
+
+/* Category Card */
+.category__link {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  transition: 250ms all;
+}
+
+.category__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 10px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,.16);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.category__img--large {
+  height: 330px;
+}
+
+.category__img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ===================== */
+/* ADMIN Panel CSS START */
+/* ===================== */
+
+#wrapper-admin {
+  padding: 100px 0 0;
+}
+
+#header-admin {
+  background-color: var(--bs-dark);;
+  padding: 15px 0;
+}
+
+#header-admin .admin-logout {
+  margin: 10px 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+#header-admin .admin-logout:hover {
+  text-decoration: underline;
+}
+
+#admin-menubar {
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+#admin-menubar .admin-menu {
+  font-size: 0;
+}
+
+#admin-menubar .admin-menu li {
+  display: inline-block;
+  margin: 0 5px 0 0;
+}
+
+#admin-menubar .admin-menu li a {
+  color:  var(--bs-dark);
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 7px 15px;
+  display: block;
+  transition: all 0.3s;
+}
+
+#admin-menubar .admin-menu li a:hover {
+  color: #fff;
+  background-color: var(--bs-dark);
+}
+
+#admin-content {
+  padding: 20px 0;
+  min-height: 750px;
+}
+
+#admin-content .admin-heading {
+  font-size: 35px;
+  margin: 0 0 15px;
+}
+
+#admin-content .add-new {
+  color: #fff;
+  background-color:  var(--bs-dark);;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 7px 10px;
+  /* margin: 0 0 20px; */
+  display: block;
+  transition: all 0.3s;
+}
+
+#admin-content .add-new:hover {
+  text-shadow: 0 0 3px #000;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+#admin-content .content-table {
+  border: 1px solid #000;
+  width: 100%;
+  margin: 0 0 20px;
+}
+
+#admin-content .content-table thead {
+  color: #fff;
+  background-color: #333;
+}
+
+#admin-content .content-table th {
+  padding: 10px;
+  border: 1px solid #fff;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#admin-content .content-table tbody {
+  color: #333;
+}
+
+#admin-content .content-table tbody tr {
+  background-color: #e7e7e7;
+}
+
+#admin-content .content-table tbody tr:nth-child(even) {
+  background-color: transparent;
+}
+
+#admin-content .content-table tbody td {
+  padding: 10px;
+  border: 1px solid #fff;
+  text-align: center;
+
+}
+
+#admin-content .content-table tbody td:nth-child(2) {
+  text-align: left;
+}
+
+#admin-content .admin-pagination {
+  margin: 0;
+}
+
+#admin-content .admin-pagination li a {
+  display: block;
+}
+
+.id,
+.edit,
+.delete {
+  text-align: center;
+}
+
+form {
+  background: #fff;
+  padding: 25px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+}
+
+/* ===================== */
+/* ADMIN Panel CSS END */
+/* ===================== */
+
+
+
